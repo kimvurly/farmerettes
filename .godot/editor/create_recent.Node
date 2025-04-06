@@ -1,0 +1,13 @@
+TileMapLayer
+Camera2D
+AnimatedSprite2D
+Node
+VideoStreamPlayer
+Button
+CollisionShape2D
+Sprite2D
+CharacterBody2D
+AnimationPlayer
+ColorRect
+CanvasLayer
+Node2D

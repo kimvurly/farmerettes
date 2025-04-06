@@ -1,0 +1,32 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1743901438
+icon.svg::CompressedTexture2D::595755337922358363::1742499124::1742499128::1::::<><>::
+::res://assets/::1743533530
+animated_title_screen1.png::CompressedTexture2D::6226060633088246762::1743533511::1743533530::1::::<><>::
+animated_title_screen2.png::CompressedTexture2D::5527541437639553564::1743533511::1743533530::1::::<><>::
+animated_title_screen3.png::CompressedTexture2D::4672601404897542571::1743533511::1743533530::1::::<><>::
+farmeretteTitleScreen.PNG::CompressedTexture2D::2215594611198280141::1742873592::1742873718::1::::<><>::
+sprites theriault ww1 (1).png::CompressedTexture2D::9057492489868469715::1743288024::1743288029::1::::<><>::
+::res://scenes/::1743535918
+transition_screen.gd::GDScript::-1::1742877186::0::1::::<>CanvasLayer<>::
+transition_screen.tscn::PackedScene::2243338158232558854::1743535918::0::1::::<><>::res://scenes/transition_screen.gd
+::res://scenes/characters/::1742861900
+::res://scenes/characters/player/::1743535918
+idle_state.gd::GDScript::-1::1743316391::0::1::::<>NodeState<>::
+player.gd::GDScript::-1::1743289659::0::1::::Player<>CharacterBody2D<>::
+player.tscn::PackedScene::6686639307130328483::1743535918::0::1::::<><>::uid://d2brtwfnn63q2::::res://assets/sprites theriault ww1 (1).png<>res://scenes/characters/player/player.gd<>res://scripts/state_machine/node_state_machine.gd<>res://scenes/characters/player/walk_state.gd<>res://scenes/characters/player/idle_state.gd
+walk_state.gd::GDScript::-1::1743535827::0::1::::<>NodeState<>::
+::res://scenes/main_scene/::1743535918
+main_scene.tscn::PackedScene::1534020258383942260::1743535918::0::1::::<><>::uid://ct4asrwabpow2::::res://tilesets/free.png<>uid://c2jb8cfq58in8::::res://scenes/characters/player/player.tscn
+::res://scenes/title_screen/::1743535918
+title_screen.gd::GDScript::-1::1743534410::0::1::::<>Control<>::
+title_screen.tscn::PackedScene::1833983156676564516::1743535918::0::1::::<><>::res://scenes/title_screen/title_screen.gd<>uid://cux7krgp7jq5g::::res://assets/animated_title_screen1.png<>uid://ck0t2gxbfu3gq::::res://assets/animated_title_screen2.png<>uid://b7tpcehbvlaml::::res://assets/animated_title_screen3.png
+::res://scripts/::1743291511
+game_input_events.gd::GDScript::-1::1743291511::0::1::::GameInputEvents<>RefCounted<>::
+::res://scripts/state_machine/::1743316392
+node_state.gd::GDScript::-1::1743289790::0::1::::NodeState<>Node<>::
+node_state_machine.gd::GDScript::-1::1743316392::0::1::::NodeStateMachine<>Node<>::
+::res://scripts/state_machine/globals/::1743290726
+data_types.gd::GDScript::-1::1743290543::0::1::::DataTypes<>RefCounted<>::
+::res://tilesets/::1742874619
+free.png::CompressedTexture2D::6166329422551431495::1742874278::1742874619::1::::<><>::

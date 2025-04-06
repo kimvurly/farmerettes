@@ -1,0 +1,56 @@
+[gd_scene load_steps=6 format=3 uid="uid://1eno1pf8kkb1"]
+
+[ext_resource type="Script" path="res://scenes/title_screen/title_screen.gd" id="1_3lper"]
+[ext_resource type="Texture2D" uid="uid://cux7krgp7jq5g" path="res://assets/animated_title_screen1.png" id="2_la6wn"]
+[ext_resource type="Texture2D" uid="uid://ck0t2gxbfu3gq" path="res://assets/animated_title_screen2.png" id="3_3ippf"]
+[ext_resource type="Texture2D" uid="uid://b7tpcehbvlaml" path="res://assets/animated_title_screen3.png" id="4_4ns7s"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_eci48"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_la6wn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_3ippf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_4ns7s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_3ippf")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[node name="TitleScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3lper")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(576, 324)
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_eci48")
+frame = 2
+frame_progress = 0.723923
+
+[node name="Button" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = -1
+anchor_top = -0.003
+anchor_right = 0.999
+anchor_bottom = 1.0
+offset_top = 1.944
+offset_right = 1.15198
+offset_bottom = 2.0
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

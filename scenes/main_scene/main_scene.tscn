@@ -1,0 +1,67 @@
+[gd_scene load_steps=5 format=4 uid="uid://v4ddbq8nob5u"]
+
+[ext_resource type="Texture2D" uid="uid://ct4asrwabpow2" path="res://tilesets/free.png" id="1_aqpnp"]
+[ext_resource type="PackedScene" uid="uid://c2jb8cfq58in8" path="res://scenes/characters/player/player.tscn" id="2_o76pr"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wp0al"]
+texture = ExtResource("1_aqpnp")
+0:3/size_in_atlas = Vector2i(4, 5)
+0:3/0 = 0
+4:3/size_in_atlas = Vector2i(5, 5)
+4:3/0 = 0
+9:3/size_in_atlas = Vector2i(2, 2)
+9:3/0 = 0
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+12:1/0 = 0
+11:1/0 = 0
+10:1/0 = 0
+9:1/0 = 0
+8:1/0 = 0
+7:1/0 = 0
+6:1/0 = 0
+4:1/0 = 0
+3:1/0 = 0
+2:1/0 = 0
+1:1/0 = 0
+0:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+10:2/0 = 0
+11:2/0 = 0
+12:2/0 = 0
+9:2/0 = 0
+8:2/0 = 0
+7:2/0 = 0
+6:2/0 = 0
+5:2/0 = 0
+4:2/0 = 0
+3:2/0 = 0
+5:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_3m62b"]
+sources/0 = SubResource("TileSetAtlasSource_wp0al")
+
+[node name="tileMap" type="Node2D"]
+position = Vector2(146, 79)
+
+[node name="gameTileMap" type="Node2D" parent="."]
+position = Vector2(-142, -81)
+
+[node name="grass and houses" type="TileMapLayer" parent="gameTileMap"]
+position = Vector2(1203, 151)
+tile_map_data = PackedByteArray("AAD3/xoAAAAEAAMAAADk/w8AAAAEAAMAAADz/xEAAAAEAAMAAADo/xYAAAAEAAMAAADa/xkAAAAEAAMAAADG/xQAAAAEAAMAAADu//z/AAAEAAMAAADE/wMAAAAEAAMAAAC6/woAAAAEAAMAAAC6//7/AAAEAAMAAADZ//v/AAAEAAMAAAC6/xgAAAAEAAMAAAA=")
+tile_set = SubResource("TileSet_3m62b")
+
+[node name="Player" parent="." instance=ExtResource("2_o76pr")]
+position = Vector2(431, 244)
