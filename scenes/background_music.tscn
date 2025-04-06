@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dou3fivj7fry5"]
+
+[ext_resource type="AudioStream" uid="uid://214q5ogs7sr" path="res://assets/farmerette_bgm_1.ogg" id="1_22e40"]
+
+[node name="BackgroundMusic" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_22e40")
+autoplay = true

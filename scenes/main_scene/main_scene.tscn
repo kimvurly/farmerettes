@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=4 uid="uid://v4ddbq8nob5u"]
+[gd_scene load_steps=7 format=3 uid="uid://v4ddbq8nob5u"]
 
 [ext_resource type="Texture2D" uid="uid://ct4asrwabpow2" path="res://tilesets/free.png" id="1_aqpnp"]
+[ext_resource type="PackedScene" uid="uid://cvmp2706vu7ky" path="res://scenes/house/house.tscn" id="2_2ayax"]
 [ext_resource type="PackedScene" uid="uid://c2jb8cfq58in8" path="res://scenes/characters/player/player.tscn" id="2_o76pr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wp0al"]
@@ -49,8 +50,12 @@ texture = ExtResource("1_aqpnp")
 3:2/0 = 0
 5:0/0 = 0
 
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_d8d0g"]
+scenes/1/scene = ExtResource("2_2ayax")
+
 [sub_resource type="TileSet" id="TileSet_3m62b"]
 sources/0 = SubResource("TileSetAtlasSource_wp0al")
+sources/1 = SubResource("TileSetScenesCollectionSource_d8d0g")
 
 [node name="tileMap" type="Node2D"]
 position = Vector2(146, 79)
@@ -58,10 +63,11 @@ position = Vector2(146, 79)
 [node name="gameTileMap" type="Node2D" parent="."]
 position = Vector2(-142, -81)
 
-[node name="grass and houses" type="TileMapLayer" parent="gameTileMap"]
-position = Vector2(1203, 151)
-tile_map_data = PackedByteArray("AAD3/xoAAAAEAAMAAADk/w8AAAAEAAMAAADz/xEAAAAEAAMAAADo/xYAAAAEAAMAAADa/xkAAAAEAAMAAADG/xQAAAAEAAMAAADu//z/AAAEAAMAAADE/wMAAAAEAAMAAAC6/woAAAAEAAMAAAC6//7/AAAEAAMAAADZ//v/AAAEAAMAAAC6/xgAAAAEAAMAAAA=")
+[node name="house" type="TileMapLayer" parent="gameTileMap"]
+position = Vector2(820, 380)
+scale = Vector2(1.88462, 1.88462)
+tile_map_data = PackedByteArray(0, 0, 232, 255, 8, 0, 1, 0, 0, 0, 0, 0, 1, 0)
 tile_set = SubResource("TileSet_3m62b")
 
-[node name="Player" parent="." instance=ExtResource("2_o76pr")]
-position = Vector2(431, 244)
+[node name="Player" parent="gameTileMap" instance=ExtResource("2_o76pr")]
+position = Vector2(783, 325)

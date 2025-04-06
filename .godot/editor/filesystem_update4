@@ -1,0 +1,7 @@
+res://scenes/main_scene/main_scene.tscn
+res://house_tileset.tres
+res://scenes/house/house.tscn
+res://scenes/title_screen/title_screen.tscn
+res://scenes/transition_screen.tscn
+res://scenes/characters/player/player.tscn
+res://scenes/background_music.tscn

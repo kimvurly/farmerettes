@@ -1,4 +1,7 @@
+AudioStreamPlayer2D
 TileMapLayer
+TileMap
+Node2D
 Camera2D
 AnimatedSprite2D
 Node
@@ -10,4 +13,3 @@ CharacterBody2D
 AnimationPlayer
 ColorRect
 CanvasLayer
-Node2D
