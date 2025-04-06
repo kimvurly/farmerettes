@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://v4ddbq8nob5u"]
 
-[ext_resource type="Texture2D" uid="uid://ct4asrwabpow2" path="res://tilesets/free.png" id="1_aqpnp"]
+[ext_resource type="Texture2D" uid="uid://ct4asrwabpow2" path="res://assets/free.png" id="1_aqpnp"]
 [ext_resource type="PackedScene" uid="uid://cvmp2706vu7ky" path="res://scenes/house/house.tscn" id="2_2ayax"]
 [ext_resource type="PackedScene" uid="uid://c2jb8cfq58in8" path="res://scenes/characters/player/player.tscn" id="2_o76pr"]
 

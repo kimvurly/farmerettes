@@ -1,10 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1743911538
-basic_furniture.png::CompressedTexture2D::587385079505480838::1743904826::1743904835::1::::<><>::
-farmerette_bgm_1.ogg::AudioStreamOggVorbis::7826354639753575610::1743911528::1743911529::1::::<><>::
-house_tileset.tres::TileSet::2216773463879776268::1743911538::0::1::::<><>::uid://d3lbmakb7mrhn::::res://assets/wooden_house_walls_tileset.png<>uid://c57im7yvrf66q::::res://assets/basic_furniture.png
+::res://::1743915749
 icon.svg::CompressedTexture2D::595755337922358363::1742499124::1742499128::1::::<><>::
-::res://assets/::1743911562
+::res://assets/::1743915749
 animated_title_screen1.png::CompressedTexture2D::6226060633088246762::1743533511::1743533530::1::::<><>::
 animated_title_screen2.png::CompressedTexture2D::5527541437639553564::1743533511::1743533530::1::::<><>::
 animated_title_screen3.png::CompressedTexture2D::4672601404897542571::1743533511::1743533530::1::::<><>::
@@ -15,26 +12,28 @@ basic_tools_and_materials.png::CompressedTexture2D::8347489900520450740::1743904
 chest.png::CompressedTexture2D::6957666096821205125::1743904867::1743904867::1::::<><>::
 farmeretteTitleScreen.PNG::CompressedTexture2D::2215594611198280141::1742873592::1742873718::1::::<><>::
 farmerette_bgm_1.ogg::AudioStreamOggVorbis::57369516557377829::1743911562::1743911604::1::::<><>::
+free.png::CompressedTexture2D::6166329422551431495::1742874278::1743915749::1::::<><>::
 simple_milk_and_grass_item.png::CompressedTexture2D::1081565253846478801::1743904870::1743904871::1::::<><>::
 sprites theriault ww1 (1).png::CompressedTexture2D::9057492489868469715::1743288024::1743288029::1::::<><>::
 wooden_house_roof_tileset.png::CompressedTexture2D::5762307053634923223::1743904815::1743904837::1::::<><>::
 wooden_house_walls_tileset.png::CompressedTexture2D::9147339990295226559::1743904811::1743904840::1::::<><>::
-::res://scenes/::1743911538
+::res://scenes/::1743911829
+background_music.tscn::PackedScene::8184902874939530010::1743911829::0::1::::<><>::uid://214q5ogs7sr::::res://assets/farmerette_bgm_1.ogg
 transition_screen.gd::GDScript::-1::1742877186::0::1::::<>CanvasLayer<>::
-transition_screen.tscn::PackedScene::2243338158232558854::1743911538::0::1::::<><>::res://scenes/transition_screen.gd
+transition_screen.tscn::PackedScene::2243338158232558854::1743911829::0::1::::<><>::res://scenes/transition_screen.gd
 ::res://scenes/characters/::1742861900
-::res://scenes/characters/player/::1743911538
+::res://scenes/characters/player/::1743911829
 idle_state.gd::GDScript::-1::1743316391::0::1::::<>NodeState<>::
 player.gd::GDScript::-1::1743289659::0::1::::Player<>CharacterBody2D<>::
-player.tscn::PackedScene::6686639307130328483::1743911538::0::1::::<><>::uid://d2brtwfnn63q2::::res://assets/sprites theriault ww1 (1).png<>res://scenes/characters/player/player.gd<>res://scripts/state_machine/node_state_machine.gd<>res://scenes/characters/player/walk_state.gd<>res://scenes/characters/player/idle_state.gd
+player.tscn::PackedScene::6686639307130328483::1743911829::0::1::::<><>::uid://d2brtwfnn63q2::::res://assets/sprites theriault ww1 (1).png<>res://scenes/characters/player/player.gd<>res://scripts/state_machine/node_state_machine.gd<>res://scenes/characters/player/walk_state.gd<>res://scenes/characters/player/idle_state.gd
 walk_state.gd::GDScript::-1::1743535827::0::1::::<>NodeState<>::
-::res://scenes/house/::1743911538
-house.tscn::PackedScene::6272540308965228284::1743911538::0::1::::<><>::uid://6t2617g8iquu::::res://house_tileset.tres
-::res://scenes/main_scene/::1743911538
-main_scene.tscn::PackedScene::1534020258383942260::1743911538::0::1::::<><>::uid://ct4asrwabpow2::::res://tilesets/free.png<>uid://cvmp2706vu7ky::::res://scenes/house/house.tscn<>uid://c2jb8cfq58in8::::res://scenes/characters/player/player.tscn
-::res://scenes/title_screen/::1743911538
+::res://scenes/house/::1743915744
+house.tscn::PackedScene::6272540308965228284::1743915744::0::1::::<><>::uid://6t2617g8iquu::::res://house_tileset.tres
+::res://scenes/main_scene/::1743915749
+main_scene.tscn::PackedScene::1534020258383942260::1743915749::0::1::::<><>::uid://ct4asrwabpow2::::res://assets/free.png<>uid://cvmp2706vu7ky::::res://scenes/house/house.tscn<>uid://c2jb8cfq58in8::::res://scenes/characters/player/player.tscn
+::res://scenes/title_screen/::1743911829
 title_screen.gd::GDScript::-1::1743904637::0::1::::<>Control<>::
-title_screen.tscn::PackedScene::1833983156676564516::1743911538::0::1::::<><>::res://scenes/title_screen/title_screen.gd<>uid://cux7krgp7jq5g::::res://assets/animated_title_screen1.png<>uid://ck0t2gxbfu3gq::::res://assets/animated_title_screen2.png<>uid://b7tpcehbvlaml::::res://assets/animated_title_screen3.png
+title_screen.tscn::PackedScene::1833983156676564516::1743911829::0::1::::<><>::res://scenes/title_screen/title_screen.gd<>uid://cux7krgp7jq5g::::res://assets/animated_title_screen1.png<>uid://ck0t2gxbfu3gq::::res://assets/animated_title_screen2.png<>uid://b7tpcehbvlaml::::res://assets/animated_title_screen3.png
 ::res://scripts/::1743291511
 game_input_events.gd::GDScript::-1::1743291511::0::1::::GameInputEvents<>RefCounted<>::
 ::res://scripts/state_machine/::1743316392
@@ -42,5 +41,5 @@ node_state.gd::GDScript::-1::1743289790::0::1::::NodeState<>Node<>::
 node_state_machine.gd::GDScript::-1::1743316392::0::1::::NodeStateMachine<>Node<>::
 ::res://scripts/state_machine/globals/::1743290726
 data_types.gd::GDScript::-1::1743290543::0::1::::DataTypes<>RefCounted<>::
-::res://tilesets/::1742874619
-free.png::CompressedTexture2D::6166329422551431495::1742874278::1742874619::1::::<><>::
+::res://tilesets/::1743915749
+house_tileset.tres::TileSet::2216773463879776268::1743911538::0::1::::<><>::uid://d3lbmakb7mrhn::::res://assets/wooden_house_walls_tileset.png<>uid://c57im7yvrf66q::::res://assets/basic_furniture.png
